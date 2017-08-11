@@ -5,7 +5,7 @@ const gulp = require('gulp'),
       watch = require('gulp-watch'),
       uglify = require('gulp-uglify'),
       sourceMaps = require('gulp-sourcemaps'),
-      ccsmin = require('gulp-minify-css'),
+      cssmin = require('gulp-minify-css'),
       imageMin = require('gulp-imagemin'),
       pngQuant = require('imagemin-pngquant'),
       sass = require('gulp-sass'),
@@ -25,7 +25,7 @@ const path = {
     src: {
       js: 'assets/js/*.js',
       img: 'assets/images/src/*.*',
-      style: 'assets/scss/style.scss'
+      style: 'assets/scss/common.scss'
     }
 };
 
@@ -70,7 +70,7 @@ gulp.task('style:build', () => {
        .pipe(sourceMaps.init())
        .pipe(sass())
        .pipe(autoprefixer())
-       .pipe(ccsmin())
+       .pipe(cssmin())
        .pipe(sourceMaps.write())
        .pipe(gulp.dest(path.build.css))
 });
@@ -78,8 +78,8 @@ gulp.task('style:build', () => {
 gulp.task('style:prod', () => {
     gulp.src(path.src.style)
         .pipe(sass())
-        .pipe(autoprefixer)
-        .pipe(cssmin)
+        .pipe(autoprefixer())
+        .pipe(cssmin())
         .pipe(gulp.dest(path.build.css))
 });
 

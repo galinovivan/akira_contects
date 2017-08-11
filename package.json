@@ -21,6 +21,7 @@
     "imagemin-pngquant": "^5.0.1"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "gulp-minify-css": "^1.2.4"
   }
 }
