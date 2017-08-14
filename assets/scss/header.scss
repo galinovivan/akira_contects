@@ -1,0 +1,30 @@
+header {
+  color: $white;
+  background: $baseColor;
+  height: 300px;
+  padding: 50px 0;
+  .header__logo {
+    .logo {
+      .img-fluid {
+        max-width: 85%;
+      }
+    }
+    .page_title {
+      padding-left: 1rem;
+      padding-right: 2rem;
+    }
+  }
+  .header__egg {
+    p {
+      margin: 0;
+    }
+  }
+  .header__contact {
+    .phone_number {
+      margin-bottom: 1.1rem;
+    }
+    .work_time {
+      margin-bottom: 2rem;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.block_center {
+  @include marginAlign();
+}
+
+
+a, button {
+  outline: none !important;
+}

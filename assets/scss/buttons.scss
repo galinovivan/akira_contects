@@ -1,0 +1,27 @@
+.button {
+  display: block;
+  border-radius: 11px;
+  border: 1px solid $white;
+  padding: 2px;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 0.5rem;
+  font-weight: 800;
+  cursor: pointer;
+  &.base {
+    background: $buttonBaseBackground;
+    @include fillingHover();
+  }
+  &.alt_col {
+    background: $buttonAltBackground;
+  }
+  &.md {
+    width: 191px;
+  }
+  &.xl {
+    width: 310px;
+  }
+  &.xs {
+    width: 130px;
+  }
+}

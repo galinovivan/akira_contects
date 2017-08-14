@@ -1,0 +1,34 @@
+html {
+  font-size: $baseFontSize;
+}
+body {
+  font-family: $baseFont;
+  color: $baseTextColor;
+  font-size: 1rem;
+  line-height: $baseLineHeight;
+}
+
+p, a, span, li {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h3, h4 {
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.link {
+  color: $baseColor;
+  text-decoration: underline;
+}
