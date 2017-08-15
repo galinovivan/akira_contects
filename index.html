@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Akira</title>
     <link rel="stylesheet" href="assets/css/common.css">
 </head>
 <body>
@@ -43,14 +43,13 @@
                     <div class="phone_number">
                         <h4>Звоните</h4>
                         <h4 class="mar_bott_0">8 880 123 22</h4>
-                        <span>Звонок бесплатный</span>
                     </div>
                     <div class="work_time">
                         <h4 class="mar_bott_0">Принимаем звонки:</h4>
                         <h4>пн-птн 10:00 - 18:00</h4>
                     </div>
                     <div class="call_button">
-                        <button class="button base md">Позвоните нам бесплатно</button>
+                        <button class="button base md">Позвоните нам</button>
                     </div>
                 </div>
             </div>
@@ -60,18 +59,18 @@
        <div class="container">
            <div class="row">
                <div class="col-md-12">
-                   <div class="block__heading">
+                   <div class="block__heading text-center">
                        <h3>Можем увеличить ваш доход на 600% уже к 1 сенятбря!</h3>
                    </div>
                </div>
            </div>
            <div class="row">
-               <div class="col-md-6 promo__about">
+               <div class="col-md-7 promo__about">
                    <div class="ya_logo">
                        <img src="assets/images/yandex_logo.png" class="img-fluid" />
                    </div>
                    <div class="list">
-                       <h4>Настройка Яндекс Директ:</h4>
+                       <h3 class="mar_bott_30">Настройка Яндекс Директ:</h3>
                        <ol>
                            <li>Увеличение Ваших продаж.</li>
                            <li>Снижение стоимости цены одной продажи.</li>
@@ -82,30 +81,45 @@
                        </ol>
                    </div>
                </div>
-               <div class="col-md-6 promo__form">
+               <div class="col-md-5 promo__form">
                    <div class="form">
                        <h3 class="form__heading">
                            Получите предложение
                        </h3>
                        <h4 class="form__subheading">Конкретно для вашего бизнеса</h4>
-                       <div class="decor_list">
-                           <span class="number">1</span>
-                           <span>Оставьте свой номер телефона, и наш специалист
-                            свяжется с Вами в течение 45 минут для консультации:</span>
+                       <div class="decor_number_list">
+                           <div class="number">
+                               <span>1</span>
+                           </div>
+                           <div class="text">
+                               <p>Оставьте свой номер телефона, и наш специалист
+                                   свяжется с Вами в течение 45 минут для консультации:</p>
+                           </div>
                        </div>
                        <form class="form base">
                            <input class="field base" name="phone_number" />
-                           <button type="submit" class="button alt xl">Получить предложение</button>
+                           <button type="submit" class="button alt_col full">
+                               <span>Получить предложение</span>
+                           <span>это бесплатно</span>
+                           </button>
                        </form>
-                       <div class="decor_list">
-                           <span class="number">2</span>
-                           <span>БЕСПЛАТНО После консультации с Вами мы проводим комплексное исследование Вашей ниши,
-                               чтобы выяснить конкретные показатели</span>
+                       <div class="decor_number_list">
+                           <div class="number">
+                               <span>2</span>
+                           </div>
+                           <div class="text">
+                               <p>БЕСПЛАТНО После консультации с Вами мы проводим комплексное исследование Вашей ниши,
+                                   чтобы выяснить конкретные показатели</p>
+                           </div>
                        </div>
-                       <div class="decor_list">
-                           <span class="number">3</span>
-                           <span>БЕСПЛАТНО Высылаем Вам наше КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ и
-                               перезваниваем с детальным представлением о Вашей нише</span>
+                       <div class="decor_number_list">
+                           <div class="number">
+                               <span>3</span>
+                           </div>
+                           <div class="text">
+                               <p>БЕСПЛАТНО Высылаем Вам наше КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ и
+                                   перезваниваем с детальным представлением о Вашей нише</p>
+                           </div>
                        </div>
                    </div>
                </div>
@@ -128,12 +142,12 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="advantage__item">
+                    <div class="advantage__item" id="advantageBlock">
                         <div class="title">
                             <span>Яндекс Директ</span>
                         </div>
-                        <div class="icon">
-
+                        <div class="animate_icon">
+                            <i class="sprite sprite-cart"></i>
                         </div>
                         <div class="price">
                             <span>от 29 990 руб.</span>
@@ -757,5 +771,7 @@
         </div>
     </section>
 </div>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="assets/js/dist/bundle.js"></script>
 </body>
 </html>

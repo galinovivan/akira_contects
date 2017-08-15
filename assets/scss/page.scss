@@ -1,0 +1,38 @@
+.ya_direct {
+  .promo__about {
+    padding-right: 11rem;
+    .ya_logo {
+      margin-bottom: 40px;
+    }
+  }
+  .promo__form {
+    padding: 25px 3rem;
+    border: 2px solid $baseColorSecondTone;
+    border-radius: 12px;
+    max-height: 405px;
+    .form {
+      .form__heading, .form__subheading {
+          color: $baseColorSecondTone;
+      }
+      .form__subheading {
+        font-size: 1.1rem;
+      }
+      .decor_number_list {
+        margin-top: 20px;
+      }
+      form {
+        button {
+          padding: 5px 0;
+          span {
+            display: block;
+            font-size: 0.7rem;
+            &:last-child {
+              text-transform: lowercase;
+              line-height: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

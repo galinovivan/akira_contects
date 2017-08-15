@@ -1,4 +1,5 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/animate.css/animate.min.css";
 
 @import "variable";
 @import "mixins";
@@ -6,6 +7,13 @@
 @import "typhography";
 @import "grid";
 @import "base";
+@import "sprites";
 @import "buttons";
+@import "forms";
+@import "lists";
 @import "header";
 @import "footer";
+@import "page";
+
+
+@import "border-spin";

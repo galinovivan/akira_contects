@@ -13,6 +13,28 @@
   }
 }
 
+@mixin lightHover($color: $baseColor) {
+  @include transition();
+  &:hover {
+    background: lighten($color, 5%);
+  }
+}
+
+@mixin darkHover($color: $baseColor) {
+  @include transition();
+  &:hover {
+    background: darken($color, 6%);
+  }
+}
+
 @mixin transition($prop: all 0.2s) {
   transition: $prop;
+}
+
+@mixin clearfix() {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 }

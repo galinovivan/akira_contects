@@ -2,9 +2,11 @@
 $transparent: transparent;
 $white: #ffffff;
 $baseColor: #eb2027;
+$baseColorSecondTone: #ec1a22;
 $baseTextColor: #5d5d5d;
 $buttonBaseBackground: $transparent;
-$buttonAltBackground: #ec1a22;
+$buttonAltBackground: $baseColorSecondTone;
+$filedBorderColor: #a8aaad;
 
 
 
@@ -18,3 +20,9 @@ $boldFont: 'gotham_pro_bold';
 //font sizes
 $baseFontSize: 16px;
 $baseLineHeight: 1.3rem;
+$smallFontSize: $baseFontSize / 1.8;
+
+
+
+//forms
+$baseFieldBorderRadius: 5px;

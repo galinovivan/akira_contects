@@ -23,7 +23,7 @@ const path = {
       css: 'assets/css'
   },
     src: {
-      js: 'assets/js/*.js',
+      js: 'assets/js/src/*.js',
       img: 'assets/images/src/*.*',
       style: 'assets/scss/common.scss'
     }
@@ -44,10 +44,10 @@ const config = {
 
 gulp.task('js:build', () => {
    gulp.src(path.src.js)
+        .pipe(babel({
+            presets: ['env']
+        }))
        .pipe(sourceMaps.init())
-       .pipe(babel({
-           presets: ['env']
-       }))
        .pipe(concat('bundle.js'))
        .pipe(uglify())
        .pipe(sourceMaps.write())
@@ -63,7 +63,6 @@ gulp.task('js:prod', () => {
         .pipe(uglify())
         .pipe(gulp.dest(path.build.js))
 });
-
 
 gulp.task('style:build', () => {
    gulp.src(path.src.style)

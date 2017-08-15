@@ -1,0 +1,16 @@
+.form {
+  display: block;
+  background: $transparent;
+  input {
+    display: block;
+    width: 100%;
+    border-radius: $baseFieldBorderRadius;
+    border: 1px solid $filedBorderColor;
+    height: 23px;
+    margin-bottom: 15px;
+    @include transition(all 0.3s);
+    &:focus {
+      border-color: $baseColor;
+    }
+  }
+}

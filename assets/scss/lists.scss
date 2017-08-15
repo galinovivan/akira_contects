@@ -1,0 +1,31 @@
+ol, ul {
+  padding-left: 1rem;
+  line-height: 1.7rem;
+  &.no_marker {
+    list-style: none;
+  }
+}
+
+.decor_number_list {
+  @include clearfix();
+  .number {
+    float: left;
+    width: 5%;
+    span {
+      font-size: 2rem;
+      line-height: 1;
+      color: $baseColorSecondTone;
+      font-weight: 600;
+    }
+  }
+  .text {
+    float: left;
+    width: 95%;
+    padding-left: 15px;
+    p {
+      font-size: $smallFontSize;
+      line-height: 1.7;
+      font-weight: 600;
+    }
+  }
+}
