@@ -1,0 +1,15 @@
+.info_frame {
+  border: 2px solid $baseColor;
+  border-radius: 12px;
+  padding: 30px 3.5rem 30px 1.5rem;
+  .info__content {
+    padding-left: 1rem;
+  }
+  .info__title {
+    color: $baseColorSecondTone;
+    margin-bottom: 15px;
+  }
+  .info__text {
+    line-height: 1.5rem;
+  }
+}

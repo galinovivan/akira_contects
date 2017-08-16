@@ -2,23 +2,26 @@
  * Created by root on 15.08.17.
  */
 (function($) {
-    var el = $('#advantageBlock');
-    var scroll = getScroll(el);
-    console.log(scroll);
-    var bodyScroll = $('body').scrollTop();
+
     window.onscroll = function() {
-        var bodyScroll = $('body').scrollTop() + $(window).height();
-        if (scroll <= bodyScroll) {
-            var icons = $('.animate_icon');
-            icons.addClass('border-spin');
-        }
+      var icons = $('.animate_icon');
+      makeBorderSpin(icons);
     };
 
-    /**
-     * @param el {jQuery}
-     * @returns {Number|Window|*}
-     */
-    function getScroll(el) {
-        return el.offset().top;
+
+    function makeBorderSpin(icons) {
+        if (icons.length > 0) {
+            icons.each(function(key, value) {
+                if (isElemVisible($(this))) {
+                    $(this).addClass('border-spin');
+                }
+            })
+        }
     }
+
+    function isElemVisible(elem) {
+      var scroll = elem.offset().top;
+      var bodyScroll = $('body').scrollTop() + $(window).height() - 300; //+ $(window).height() + 1000;
+      return bodyScroll >= scroll;
+    };
 })(jQuery);

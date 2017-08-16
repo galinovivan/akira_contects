@@ -1,0 +1,7 @@
+.frame_row {
+  background: $frameColor;
+  padding: 30px;
+  .block__heading, .block__subheading {
+    margin-bottom: 30px;
+  }
+}

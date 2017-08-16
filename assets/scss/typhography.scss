@@ -37,3 +37,19 @@ h4 {
 .small_text {
   font-size: $smallFontSize;
 }
+
+.block__heading {
+  text-align: center;
+}
+
+.block__subheading {
+  text-align: center;
+  margin-bottom: 50px;
+  * {
+    font-weight: 400;
+  }
+  &.big_marg {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
