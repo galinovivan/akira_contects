@@ -42,3 +42,90 @@
     margin-bottom: 70px;
   }
 }
+
+.prices {
+  .prices__table {
+    margin-top: 40px;
+  }
+}
+
+.garant {
+  background: $baseColor;
+  padding: 40px 0;
+  color: $white;
+  .garant__item {
+    padding: 0 5px;
+    .title {
+      margin-bottom: 25px;
+      span {
+        font-size: 1.1rem;
+        font-family: $boldFont;
+      }
+    }
+  }
+}
+
+.free_services {
+  .services__item {
+    margin-bottom: 80px;
+    .title {
+      height: auto;
+      padding: 0 5.2rem;
+      span {
+        font-size: 1.1rem;
+      }
+    }
+    .text {
+      font-size: 1rem;
+      padding: 0 4rem;
+      height: 65px;
+      margin-bottom: 25px;
+    }
+    .icon {
+      margin-top: 25px;
+    }
+    .action_button {
+      button {
+        width: 200px;
+        font-size: 0.5rem;
+        padding: 3px 0;
+        @include marginAlign();
+      }
+    }
+  }
+}
+
+.order_form {
+  .form_container {
+    padding-right: 8.5%;
+    .form {
+      padding: 30px 35px;
+      background: $baseColor;
+      color: $white;
+      border-radius: 12px;
+      label {
+        color: $white;
+      }
+      input {
+        margin-bottom: 0;
+      };
+      .form__heading {
+        margin-bottom: 25px;
+      }
+      .form__about {
+        p {
+          font-size: 0.9rem;
+        }
+      }
+      .button {
+        padding: 10px 0;
+      }
+    }
+  }
+  .block__heading {
+    text-align: left;
+  }
+  .block__subheading {
+    text-align: left;
+  }
+}

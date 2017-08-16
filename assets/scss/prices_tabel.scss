@@ -1,0 +1,77 @@
+.prices__table {
+  .table {
+    .title_row {
+      .desc_column {
+        width: 30%;
+        flex: 0 0 30%;
+        max-width: 30%;
+        padding: 17px 0 17px 17px;
+        background: $baseTextColor;
+        span {
+          font-size: 1.5rem;
+          color: $white;
+        }
+      }
+        .column {
+          border-left: 6px solid $white;
+          width: 23.3%;
+          flex: 0 0 23.3%;
+          max-width: 23.3%;
+          padding: 17px 0 17px 0;
+          background: $baseColor;
+          text-align: center;
+          span {
+            font-size: 1.5rem;
+            color: $white;
+          }
+        }
+      }
+    .table_row {
+        .desc_column {
+          padding: 7px 0 7px 17px;
+          width: 30%;
+          flex: 0 0 30%;
+          max-width: 30%;
+          background: $darkGray;
+          span {
+            font-weight: 600;
+          }
+        }
+      .column {
+        padding: 5px 0 5px 17px;
+        border-left: 6px solid $white;
+        width: 23.3%;
+        flex: 0 0 23.3%;
+        max-width: 23.3%;
+        text-align: center;
+        background: $lightGray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .price {
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+      }
+     }
+    .button_row {
+        .desc_column {
+          width: 30%;
+          flex: 0 0 30%;
+          max-width: 30%;
+        }
+      .column {
+        width: 23.3%;
+        flex: 0 0 23.3%;
+        max-width: 23.3%;
+       }
+      .button {
+        padding: 5px 0;
+        font-size: 0.5rem;
+        margin-top: 10px;
+        width: 95%;
+        @include marginAlign();
+      }
+      }
+    }
+  }

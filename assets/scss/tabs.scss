@@ -1,0 +1,18 @@
+.nav-tabs {
+  border-bottom: none;
+  margin-bottom: 40px;
+  .nav-item {
+    .nav-link {
+      width: $tabLinkWidth;
+      border-color: $baseColor;
+      font-size: 0.54rem;
+      border-radius: 12px !important;
+      line-height: 2.5;
+      margin-right: 25px;
+      &.active {
+        background: $baseColor;
+        color: $white;
+      }
+    }
+  }
+}

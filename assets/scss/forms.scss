@@ -4,13 +4,23 @@
   input {
     display: block;
     width: 100%;
-    border-radius: $baseFieldBorderRadius;
     border: 1px solid $filedBorderColor;
     height: 23px;
     margin-bottom: 15px;
     @include transition(all 0.3s);
-    &:focus {
+  }
+  input, textarea {
+    width: 100%;
+    border-radius: $baseFieldBorderRadius;
+    &:hover {
       border-color: $baseColor;
+    }
+  }
+  .form-control {
+    background: $transparent;
+    border: none;
+    label {
+      font-size: 0.8rem;
     }
   }
 }

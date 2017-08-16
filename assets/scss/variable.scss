@@ -8,8 +8,8 @@ $buttonBaseBackground: $transparent;
 $buttonAltBackground: $baseColorSecondTone;
 $filedBorderColor: #a8aaad;
 $lightGray: #e6e7e8;
+$darkGray: #d1d1d1;
 $frameColor: $lightGray;
-
 
 //fonts
 $baseFont: 'gotham_pro';
@@ -27,3 +27,6 @@ $smallFontSize: $baseFontSize / 1.8;
 
 //forms
 $baseFieldBorderRadius: 5px;
+
+
+$tabLinkWidth: 100px;
