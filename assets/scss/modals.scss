@@ -1,0 +1,42 @@
+.modal {
+  .modal-dialog {
+    max-width: 800px;
+    .modal-content {
+      padding: 2rem 5rem;
+    }
+    .modal__close {
+      position: absolute;
+      top: 7px;
+      right: 7px;
+      z-index: 1000;
+      padding: 1rem;
+      font-size: 15px;
+      line-height: 1px;
+      color: #ed1b2d;
+      .icon_close {
+        width: 16px;
+        height: 16px;
+        font-size: 15px;
+        line-height: 1px;
+        color: #ed1b2d;
+        fill: $white;
+      }
+    }
+    .modal__title {
+      font-size: 3rem;
+      color: $baseColor;
+      margin-bottom: 1.5rem;
+    }
+    .form-control {
+      max-width: 70%;
+      border: 1px solid $lightGray;
+      height: 30px;
+    }
+    .btn {
+      background: $baseColor;
+      color: $white;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+  }
+}

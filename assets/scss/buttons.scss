@@ -9,6 +9,7 @@
   font-weight: 800;
   font-family: $mediumFont;
   cursor: pointer;
+  text-align: center;
   &.base {
     background: $buttonBaseBackground;
     @include fillingHover();

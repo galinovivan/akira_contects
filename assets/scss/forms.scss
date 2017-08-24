@@ -24,3 +24,34 @@
     }
   }
 }
+
+.order_form_compact {
+  width: 400px;
+  //height: 300px;
+  background: $baseColor;
+  color: $white;
+  border-radius: 12px;
+  padding: 35px;
+  @include marginAlign();
+  .block__about {
+    text-align: center;
+    p {
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+  }
+  .form {
+    .form-control {
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+      label {
+        font-size: 0.7rem;
+        color: $white;
+      }
+    }
+    .button {
+      padding: 6px 0;
+    }
+  }
+}

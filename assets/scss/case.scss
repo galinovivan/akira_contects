@@ -1,0 +1,96 @@
+.case {
+  .block__subheading {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    h3 {
+      font-weight: 700;
+    }
+  }
+  .case__header {
+    background: $lightGray;
+    padding: 70px 0;
+    .thumb {
+      img {
+        max-width: 300px;
+      }
+    }
+    .description {
+      h3 {
+        line-height: 1.8rem;
+      }
+    }
+  }
+  .case__part {
+    padding: 50px 0  50px  0;
+    min-height: 320px;
+    border-bottom: 2px solid $baseColor;
+    .big_title {
+      span {
+        font-size: 2.5rem;
+        font-weight: 800;
+      }
+    }
+    .desc {
+      li {
+        line-height: 1.8rem;
+      }
+    }
+    .case__icon {
+      width: 110px;
+      height: 110px;
+      position: relative;
+      &.question {
+        background: url('../images/question_icon.png') no-repeat;
+        background-size: contain;
+      }
+      &.gear {
+        background: url('../images/setting_icon.png') no-repeat;
+        background-size: contain;
+      }
+      &::after {
+        content: '';
+        display: block;
+        width: 21px;
+        height: 76px;
+        background: url('../images/bottom_arrow.png') no-repeat;
+        position: absolute;
+        bottom: -100px;
+        right: 37%;
+      }
+      &.long_arrow {
+        &::after {
+          height: 219px;
+          bottom: -240px;
+          background: url('../images/long_bottom_arrow.png') no-repeat;
+        }
+      }
+    }
+  }
+  .case__bott {
+    margin-bottom: 70px;
+  }
+  .case__result {
+    .title {
+      span {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: $baseColorSecondTone;
+      }
+    }
+    .result {
+      padding: 40px 0;
+      background: $baseColor;
+      p {
+        color: $white;
+        font-weight: 800;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+      }
+    }
+  }
+}
+.case_item {
+  margin-bottom: 70px;
+}

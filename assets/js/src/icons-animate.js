@@ -3,8 +3,8 @@
  */
 (function($) {
 
+    var icons = $('.animate_icon');
     window.onscroll = function() {
-      var icons = $('.animate_icon');
       makeBorderSpin(icons);
     };
 

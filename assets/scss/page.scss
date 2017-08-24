@@ -44,6 +44,20 @@
 }
 
 .prices {
+  .form__heading, .form__subheading {
+    text-align: center;
+  }
+  .form__heading {
+    margin-bottom: 25px;
+  }
+    .form__subheading {
+      margin-bottom: 25px;
+    }
+  .form__subheading {
+    h3 {
+      font-weight: 300;
+    }
+  }
   .prices__table {
     margin-top: 40px;
   }
@@ -127,5 +141,29 @@
   }
   .block__subheading {
     text-align: left;
+  }
+}
+.how_work {
+  .how_work_list {
+    .icon {
+      width: 130px;
+      height: 130px;
+      margin-bottom: 20px;
+      h3 {
+        margin: 0;
+        color: $baseColor;
+        text-align: center;
+        text-transform: lowercase;
+      }
+    }
+    .text {
+      padding: 0 1rem;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .item {
+      margin-bottom: 95px;
+    }
   }
 }

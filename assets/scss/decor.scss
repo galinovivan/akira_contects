@@ -1,0 +1,33 @@
+.decor_arrow {
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    width: 85px;
+    height: 23px;
+    position: absolute;
+    right: -18%;
+    top: 22%;
+  }
+  &.right_arrow {
+    &::after {
+      background: url('../images/arrow-right.png') no-repeat;
+    }
+  }
+  &.left_arrow {
+    &::after {
+      background: url('../images/left_arrow.png') no-repeat;
+    }
+  }
+  &.bottom_arrow {
+    &::after {
+      background: url('../images/bottom_arrow.png') no-repeat;
+      right: auto;
+      bottom: -45%;
+      left: 47%;
+      top: auto;
+      width: 23px;
+      height: 85px;
+    }
+  }
+}
