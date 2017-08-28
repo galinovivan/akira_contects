@@ -24,6 +24,11 @@
     border-color: $baseColor;
     @include fillingHover();
   }
+  &.white {
+    background: $white;
+    color: $baseColor;
+    font-size: 0.8rem;
+  }
   &.md {
     width: 191px;
   }
@@ -42,5 +47,8 @@
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+  &.md_font {
+    font-size: 0.7rem;
   }
 }

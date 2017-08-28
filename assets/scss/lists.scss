@@ -29,3 +29,31 @@ ol, ul {
     }
   }
 }
+
+.analize_list {
+  list-style: none;
+  background: url('../images/list_analizy.png') no-repeat left center;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: 2.5rem;
+  padding-left: 35px;
+}
+
+.base_color_marker {
+  list-style: none;
+  padding-left: 0;
+  li {
+    line-height: 2.4rem;
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      background: $baseColor;
+      border-radius: 100%;
+      vertical-align: middle;
+      margin-right: 13px;
+    }
+  }
+}

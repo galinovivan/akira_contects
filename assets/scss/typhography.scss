@@ -23,10 +23,19 @@ h3, h4 {
 
 h3 {
   font-size: 1.9rem;
+  &.small {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2rem;
+  }
 }
 
 h4 {
   font-size: 1.2rem;
+}
+.light_font {
+  font-family: $lightFont;
+  font-weight: 200;
 }
 
 .link {
@@ -55,12 +64,15 @@ h4 {
 }
 
 .big_heading {
-  padding: 75px 0;
+  padding:  135px 0 0 0;
   background: $baseColor;
   h1 {
     color: $white;
-    text-align: center;
-    font-weight: 800;
+    text-align: left;
+    font-weight: 100;
+    font-size: 5.4rem;
+    font-family: $lightFont;
+    text-transform: uppercase;
   }
 }
 
@@ -68,4 +80,31 @@ h4 {
   h3 {
     font-size: 1.4rem;
   }
+}
+
+.link_decoration_underline {
+  text-decoration: underline;
+  color: $white;
+  @include transition();
+  &:hover {
+    text-decoration: none;
+    color: $white;
+  }
+  &:visited {
+    color: $white;
+  }
+}
+
+.floating_heading {
+  margin-top: 30px;
+  * {
+    color: $baseColorSecondTone;
+    font-size: 2.2rem;
+    margin-bottom: 0;
+    line-height: 0.59;
+  }
+}
+
+.medium_font {
+  font-weight: 600;
 }

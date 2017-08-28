@@ -5,10 +5,13 @@ header {
   padding: 50px 0;
   .header__logo {
     .page_title {
-      padding-left: 1rem;
-      padding-right: 2rem;
+      padding-left: 3rem;
       h3 {
         margin-bottom: 0.6rem;
+      }
+      &.strategy {
+        padding-left: 2rem;
+        padding-top: 17px;
       }
     }
   }
@@ -27,6 +30,9 @@ header {
           margin-bottom: 0.3rem;
         }
        }
+      p {
+        margin-bottom: 0;
+      }
     }
     .work_time {
       margin-bottom: 2rem;

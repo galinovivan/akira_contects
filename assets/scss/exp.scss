@@ -163,6 +163,14 @@ $blue: #0eb7da;
   width: 141px;
   height: 141px;
   padding: 0;
+  &.small_icon {
+    width: 89px;
+    height: 89px;
+  }
+  &.big_icon {
+    width: 208px;
+    height: 208px;
+  }
 
   &:hover {
     color: $blue;
