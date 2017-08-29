@@ -1,0 +1,13 @@
+.scroll_top {
+  display: block;
+  width: 53px;
+  height: 53px;
+  position: fixed;
+  right: 90px;
+  bottom: 145px;
+  background: url('../images/scroll_top_arrow.png') no-repeat;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+  @include webkitApereance(none);
+}

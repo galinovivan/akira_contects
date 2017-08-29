@@ -38,3 +38,7 @@
     clear: both;
   }
 }
+
+@mixin webkitApereance($prop) {
+    -webkit-appearance: $prop;
+}

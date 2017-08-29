@@ -170,6 +170,9 @@ $blue: #0eb7da;
   &.big_icon {
     width: 208px;
     height: 208px;
+    img {
+      max-width: 110px;
+    }
   }
 
   &:hover {

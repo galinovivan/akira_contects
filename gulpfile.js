@@ -44,9 +44,6 @@ const config = {
 
 gulp.task('js:build', () => {
    gulp.src(path.src.js)
-        .pipe(babel({
-            presets: ['env']
-        }))
        .pipe(sourceMaps.init())
        .pipe(concat('bundle.js'))
        .pipe(uglify())
@@ -56,9 +53,6 @@ gulp.task('js:build', () => {
 
 gulp.task('js:prod', () => {
     gulp.src(path.src.js)
-        .pipe(babel({
-            presets: ['env']
-        }))
         .pipe(concat('bundle.js'))
         .pipe(uglify())
         .pipe(gulp.dest(path.build.js))
