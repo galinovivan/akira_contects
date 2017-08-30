@@ -48,4 +48,11 @@ header {
       font-size: 1.1rem;
     }
   }
+  &.context {
+    .header__contact {
+      .phone_number {
+        margin-left: 44%;
+      }
+    }
+  }
 }

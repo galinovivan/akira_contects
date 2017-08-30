@@ -4,6 +4,9 @@ ol, ul {
   &.not_marker {
     list-style: none;
   }
+  li {
+    font-size: 1.1rem;
+  }
 }
 
 .decor_number_list {

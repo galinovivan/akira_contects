@@ -90,7 +90,7 @@ h4 {
 
 .link_decoration_underline {
   text-decoration: underline;
-  color: $white;
+  color: $white !important;
   @include transition();
   &:hover {
     text-decoration: none;
