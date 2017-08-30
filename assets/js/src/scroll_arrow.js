@@ -16,7 +16,7 @@
 
     function initScrollArrow(arrowEl) {
         var body = $('body');
-        if (body.scrollTop() > 400) {
+        if (body.scrollTop() > 3000) {
             arrowEl.show('fast');
         } else {
             arrowEl.hide();
