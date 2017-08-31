@@ -1,7 +1,7 @@
 .button {
   display: block;
   border-radius: 11px;
-  border: 1px solid $white;
+  border: 1px solid $transparent;
   padding: 1px;
   text-transform: uppercase;
   color: $white;
@@ -12,6 +12,7 @@
   text-align: center;
   &.base {
     background: $buttonBaseBackground;
+    border: 1px solid $white;
     @include fillingHover();
   }
   &.alt_col {
@@ -28,6 +29,7 @@
     background: $white;
     color: $baseColor;
     font-size: 0.8rem;
+    @include shadowHover();
   }
   &.md {
     width: 191px;

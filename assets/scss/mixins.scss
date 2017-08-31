@@ -10,6 +10,7 @@
     background: $baseColor;
     color: $color;
     border-color: $background;
+    text-decoration: none;
   }
 }
 
@@ -17,6 +18,7 @@
   @include transition();
   &:hover {
     background: lighten($color, 5%);
+    text-decoration: none;
   }
 }
 
@@ -24,6 +26,15 @@
   @include transition();
   &:hover {
     background: darken($color, 6%);
+    text-decoration: none;
+  }
+}
+
+@mixin shadowHover() {
+  @include transition();
+  &:hover {
+    box-shadow: 0 11px 23px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    text-decoration: none;
   }
 }
 
